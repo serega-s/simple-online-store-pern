@@ -74,18 +74,18 @@ const DevicePage = () => {
               border: "5px solid lightgray",
             }}
           >
-            <h3>От: {device.price} руб.</h3>
+            <h3>From: {device.price} руб.</h3>
             <Button
               variant={"outline-dark"}
               onClick={() => addToBasket(device)}
             >
-              Добавить в корзину
+              Add to Basket
             </Button>
           </Card>
         </Col>
       </Row>
       <Row className="d-flex flex-column m-3">
-        <h1>Характеристики</h1>
+        <h1>Performance</h1>
         {device.info.map((info, index) => (
           <Row
             key={info.id}
